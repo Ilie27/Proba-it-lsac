@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+import LandingPage from "./LandingPage";
 
 function App() {
   return (
     <div>
-	<Navbar/>
+	<Navbar />
+	<LandingPage />
     <Footer />
     </div>
   );

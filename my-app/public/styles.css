@@ -1,6 +1,6 @@
   body {
     background: #F5F5F5;
-    padding: 0;
+    font-family: 'Merriweather';
   }
   
   footer {
@@ -14,9 +14,12 @@
   }
   
   footer p {
-    font-style: Merriweather;
     color: #FFFFFF;
     background-color:#06114F;
+  }
+
+  .container-fluid{
+    padding: 30px;
   }
 
   .icon{
@@ -24,7 +27,48 @@
     color: #FFFFFF;
   }
 
-  .nav-link{
-    color: black;
+  .navbar a{
+    color: #06114F;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 1.5rem;
   }
-  
+
+  .landing-text{
+    text-align: center;
+    color: #252F65;
+  }
+  @media (min-width: 992px) {
+  .landing-page h1{
+    position: absolute;
+    width: 659px;
+    height: 133px;
+    left: 55px;
+    top: 288px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 121.1%;
+  }
+
+  .landing-page p{
+    position: absolute;
+    width: 535px;
+    height: 53px;
+    left: 104px;
+    top: 406px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .saltbae{
+    position: absolute;
+    width: 647px;
+    height: 647px;
+    left: 694px;
+    top: 78px;
+  }
+}
