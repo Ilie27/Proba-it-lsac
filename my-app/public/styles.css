@@ -1,0 +1,30 @@
+  body {
+    background: #F5F5F5;
+    padding: 0;
+  }
+  
+  footer {
+    background-color:#06114F;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+  }
+  
+  footer p {
+    font-style: Merriweather;
+    color: #FFFFFF;
+    background-color:#06114F;
+  }
+
+  .icon{
+    margin: 12px;
+    color: #FFFFFF;
+  }
+
+  .nav-link{
+    color: black;
+  }
+  
