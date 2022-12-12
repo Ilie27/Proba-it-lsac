@@ -1,0 +1,149 @@
+  body {
+    background: #F5F5F5;
+  }
+
+  .icon{
+    margin: 12px;
+    color: #FFFFFF;
+  }
+
+  .navbar a{
+    color: #06114F;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .landing-text{
+    text-align: center;
+    color: #252F65;
+  }
+
+
+  .landing-page button{
+    background-color: #6F3096;
+    color: #FFFFFF;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 60px;
+  }
+
+  @media (min-width: 992px) {
+  .landing-page h1{
+    position: absolute;
+    width: 659px;
+    height: 133px;
+    left: 55px;
+    top: 288px;
+  }
+
+  .landing-page p{
+    position: absolute;
+    width: 535px;
+    height: 53px;
+    left: 104px;
+    top: 406px;
+  }
+
+  .landing-page button{
+    position: absolute;
+    left: 238px;
+    top: 486px;
+  }
+
+  .saltbae{
+    position: absolute;
+    width: 647px;
+    height: 647px;
+    left: 694px;
+    top: 78px;
+  }
+
+  .container-fluid.bottom{
+    padding: 30px;
+    background-color:#06114F;
+    position: absolute;
+    width: 1496px;
+    height: 174px;
+    left: -59px;
+    top: 2039px;
+    text-align: center;
+  }
+
+  footer p {
+    color: #FFFFFF;
+    background-color:#06114F;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-page h1{
+    height: 115px;
+    width: 298px;
+    left: 31px;
+    top: 153px;
+    border-radius: nullpx;    
+  }
+
+  .landing-page p{
+    height: 79px;
+    width: 298px;
+    left: 31px;
+    top: 309px;
+    border-radius: nullpx;    
+  }
+
+  .landing-page button{
+    position: absolute;
+    left: 238px;
+    top: 486px;
+  }
+
+  .saltbae{
+    height: 394px;
+    width: 394px;
+    left: -17px;
+    top: 521px;
+    border-radius: 0px;    
+  }
+
+  .container-fluid.bottom{
+    padding: 30px;
+    background-color:#06114F;
+    position: absolute;
+    height: 218px;
+    width: 100%;
+    left: -1px;
+    top: 2643px;
+    border-radius: 0px;    
+    text-align: center;
+  }
+
+  footer p {
+    color: #FFFFFF;
+    background-color:#06114F;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+}

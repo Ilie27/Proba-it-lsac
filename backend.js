@@ -11,7 +11,7 @@ mongoose.connect("mongodb://localhost:27017/ProbaItDB");
 
 const Schema = mongoose.Schema;
 
-const memeSchema = new Schema({
+const memeSchema = new mongoose.Schema({
   description: String
 });
 
@@ -26,7 +26,7 @@ const Meme = mongoose.model('Meme', memeSchema);
 
 // const User = new mongoose.model("User", userSchema);
 
-// Target one meme
+// Target all memes
 
 app.route("/memes")
 
@@ -47,6 +47,7 @@ app.route("/memes")
 
   newMeme.save(function(err){
     if(!err){
+      console.log(newMeme);
       res.send("Succesfully added a new meme.");
     } else {
       res.send(err);
@@ -54,7 +55,7 @@ app.route("/memes")
   });
 });
 
-// Target all memes
+// Target one meme
 
 app.route("/memes/:memeId")
 
@@ -72,11 +73,11 @@ Meme.findOne({_id: req.params.memeId}, function(err, foundMeme){
 });
 })
 
-// nu merge
+app.route("/memes/:memeId")
 .patch(function(req,res){
   Meme.findOneAndUpdate(
     {_id: req.params.memeId},
-    {description: req.body.description},
+    { $set: {description: req.body.description} },
     function(err){
       if(!err){
         res.send("Succesfully updated meme");
@@ -84,7 +85,7 @@ Meme.findOne({_id: req.params.memeId}, function(err, foundMeme){
         res.send(err);
       }
     }
-  )
+  );
 })
 
 .delete(function(req,res){
