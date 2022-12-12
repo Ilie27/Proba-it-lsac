@@ -7,23 +7,24 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-
 mongoose.connect("mongodb://localhost:27017/ProbaItDB");
 
-const memeSchema = {
+const Schema = mongoose.Schema;
+
+const memeSchema = new Schema({
   description: String
-};
+});
 
-const Meme = new mongoose.model("Meme", memeSchema);
+const Meme = mongoose.model('Meme', memeSchema);
 
-const userSchema = {
-  email: String,
-  username: String,
-  password: String,
-  memes: [memeSchema]
-};
+// const userSchema = new Schema({
+//   email: String,
+//   username: String,
+//   password: String,
+//   memes: [memeSchema]
+// });
 
-const User = new mongoose.model("User", userSchema);
+// const User = new mongoose.model("User", userSchema);
 
 // Target one meme
 
@@ -70,6 +71,32 @@ Meme.findOne({_id: req.params.memeId}, function(err, foundMeme){
   }
 });
 })
+
+// nu merge
+.patch(function(req,res){
+  Meme.findOneAndUpdate(
+    {_id: req.params.memeId},
+    {description: req.body.description},
+    function(err){
+      if(!err){
+        res.send("Succesfully updated meme");
+      } else {
+        res.send(err);
+      }
+    }
+  )
+})
+
+.delete(function(req,res){
+  Meme.deleteOne({_id: req.params.memeId},function(err){
+    if(!err){
+      res.send("Succesfully deleted the meme");
+    } else {
+      res.send(err);
+    }
+  });
+});
+
 
 
 const port = 3000;

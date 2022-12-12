@@ -4,8 +4,7 @@
   }
   
   footer {
-    background-color:#06114F;
-    position: absolute;
+    position: sticky;
     text-align: center;
     bottom: 0;
     padding: 10px;
@@ -18,8 +17,9 @@
     background-color:#06114F;
   }
 
-  .container-fluid{
+  .container-fluid.bottom{
     padding: 30px;
+    background-color:#06114F;
   }
 
   .icon{
@@ -32,12 +32,47 @@
     margin-right: 20px;
     margin-left: 10px;
     font-size: 1.5rem;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
   }
 
   .landing-text{
     text-align: center;
     color: #252F65;
   }
+
+  .landing-page h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 121.1%;
+  }
+
+  .landing-page p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .landing-page button{
+    background-color: #6F3096;
+    color: #FFFFFF;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 60px;
+  }
+
   @media (min-width: 992px) {
   .landing-page h1{
     position: absolute;
@@ -45,10 +80,6 @@
     height: 133px;
     left: 55px;
     top: 288px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 43px;
-    line-height: 121.1%;
   }
 
   .landing-page p{
@@ -57,11 +88,12 @@
     height: 53px;
     left: 104px;
     top: 406px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
+  }
+
+  .landing-page button{
+    position: absolute;
+    left: 238px;
+    top: 486px;
   }
 
   .saltbae{
@@ -71,4 +103,5 @@
     left: 694px;
     top: 78px;
   }
+
 }

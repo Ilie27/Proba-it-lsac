@@ -5,7 +5,7 @@ const year = day.getFullYear();
 
 function Footer() {
   return (
-  <div className="container-fluid">
+  <div className="container-fluid bottom">
   <footer>
   <a href="https://www.instagram.com/lsacbucuresti/"><i className="icon fa-brands fa-instagram"></i></a>
   <a href="https://www.twitch.tv/lsac_bucuresti"><i className="icon fa-brands fa-twitch"></i></a>
