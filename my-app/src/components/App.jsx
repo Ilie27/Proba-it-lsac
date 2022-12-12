@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 import UploadFrom from "./UploadForm";
+import MostViewed from "./MostViewed";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 	<Navbar />
 	<LandingPage />
   <UploadFrom />
+  <MostViewed />
   <Footer />
     </div>
   );

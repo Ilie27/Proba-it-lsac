@@ -179,6 +179,47 @@
   .box #InputDescriere{
     margin-bottom: 20px;
   }
+  .viewed h1{
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 69px;
+    top: 1526px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #252F65;
+  }
+
+  .img1{
+    position: absolute;
+    top: 1626px;
+    width: 418px;
+    height: 369px;
+    border-radius: 55px;
+  }
+
+  .img2{
+    position: absolute;
+    top: 1626px;
+    width: 418px;
+    height: 369px;
+    left: 500px;
+    border-radius: 55px;
+  }
+
+  .img3{
+    position: absolute;
+    top: 1626px;
+    width: 418px;
+    height: 369px;
+    left: 1000px;
+    border-radius: 55px;
+  }
+
   .container-fluid.bottom{
     padding: 30px;
     background-color:#06114F;
@@ -229,8 +270,9 @@
 
   .landing-page button{
     position: absolute;
-    left: 25%;
+    left:27%;
     top: 486px;
+
   }
 
   .saltbae{
@@ -305,7 +347,47 @@
     width: 150px;
   }
 
+  .viewed h1{
+    position: absolute;
+    width: 231px;
+    height: 45px;
+    left: 35%;
+    top: 1700px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #252F65;
+  }
 
+  .img1{
+    position: absolute;
+    width: 283px;
+    height: 250px;
+    left: 33%;
+    top: 1785px;
+    border-radius: 55px;
+  }
+
+  .img2{
+    position: absolute;
+    width: 302px;
+    height: 243px;
+    left: 33%;
+    top: 2072px;
+    border-radius: 55px;
+  }
+
+  .img3{
+    position: absolute;
+    width: 284px;
+    height: 247px;
+    left: 33%;
+    top: 2356px;
+    border-radius: 55px;
+  }
 
   .container-fluid.bottom{
     padding:  0px;
