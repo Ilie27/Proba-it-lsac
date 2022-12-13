@@ -93,6 +93,9 @@
     color: #FFFFFF;
   }
   
+  .fa-brands{
+    color:#FFFFFF;
+  }
 
   @media (min-width: 992px) {
   .landing-page h1{
