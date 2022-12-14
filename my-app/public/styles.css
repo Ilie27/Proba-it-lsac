@@ -1,435 +1,219 @@
   body {
-    background: #F5F5F5;
-  }
-  
-  .icon{
-    margin: 12px;
-    color: #FFFFFF;
+    background-color: #F5F5F5;
   }
 
+  a{
+    text-decoration: none;
+  }
+
+  .container-fluid{
+    padding: 3% 15%;
+  }
+   /* Navbar  */
   .navbar {
     background: #F5F5F5;
   }
 
   .navbar a{
     color: #06114F;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 1.5rem;
-    font-size: 20px;
     font-weight: 300;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: left;
   }
 
-  .landing-text{
-    text-align: center;
-    color: #252F65;
-  }
+ /* Footer */
+ footer{
+   text-align: center;
+   color: #F5F5F5;
+ }
 
-  .landing-page h1{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 43px;
-    line-height: 121.1%;
-  }
-
-  .landing-page p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  .landing-page button{
-    background-color: #6F3096;
-    color: #FFFFFF;
-    font-family: Merriweather;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-    border-radius: 5px;
-    padding: 20px 60px;
-  }
-
-  .landing-page a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-
-  .box h1{
-    text-align: center;
-  }
-
-  .box p{
-    text-align: center;
-  }
-
-  .form-upload{
-    position: relative;
-    width: 70%;
-  }
-
-  .form-upload a{
-    background-color: #6F3096;
-    color: #FFFFFF;
-    font-family: Merriweather;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-    border-radius: 5px;
-    padding: 20px 60px;
-  }
-
-  .box button {
-    background-color: #6F3096;
-    color: #FFFFFF;
-  }
-  
-  .fa-brands{
-    color:#FFFFFF;
-  }
-
-  @media (min-width: 992px) {
-  .landing-page h1{
-    position: absolute;
-    width: 659px;
-    height: 133px;
-    left: 55px;
-    top: 288px;
-  }
-
-  .landing-page p{
-    position: absolute;
-    width: 535px;
-    height: 53px;
-    left: 104px;
-    top: 406px;
-  }
-
-  .landing-page button{
-    position: absolute;
-    left: 203px;
-    top: 486px;
-  }
-
-
-  .saltbae{
-    position: absolute;
-    width: 647px;
-    height: 647px;
-    left: 694px;
-    top: 78px;
-  }
-
-  .container-fluid.middle{
-    position: absolute;
-    width: 1496px;
-    height: 673px;
-    left: -4px;
-    top: 786px;
-    background-color: #6F3096;
-  }
-
-  .box {
-    position: absolute;
-    width: 945px;
-    height: 458px;
-    left: 242px;
-    top: 97px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.5);
-    border-radius: 21px;
-  }
-
-  .box h1{
-    padding-top: 100px;
-    padding-bottom: 30px;
-    color: #252F65;
-
-  }
-
-  .box p{
-    padding-bottom: 30px;
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #252F65;
-    padding-left: 30px;
-    padding-right: 30px;
-
-  }
-
-  .box form{
-    padding-top: 100px;
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .box #InputDescriere{
-    margin-bottom: 20px;
-  }
-  .viewed h1{
-    position: absolute;
-    width: 250px;
-    height: 45px;
-    left: 69px;
-    top: 1526px;
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
-    text-align: center;
-    color: #252F65;
-  }
-
-  .img1{
-    position: absolute;
-    top: 1626px;
-    width: 418px;
-    height: 369px;
-    border-radius: 55px;
-  }
-
-  .img2{
-    position: absolute;
-    top: 1626px;
-    width: 418px;
-    height: 369px;
-    left: 500px;
-    border-radius: 55px;
-  }
-
-  .img3{
-    position: absolute;
-    top: 1626px;
-    width: 418px;
-    height: 369px;
-    left: 1000px;
-    border-radius: 55px;
-  }
-
-  .container-fluid.bottom{
-    padding: 30px;
-    background-color:#06114F;
-    position: absolute;
-    width: 1496px;
-    height: 174px;
-    top: 2039px;
-    text-align: center;
-  }
-
-  .box button {
-    background-color: #6F3096;
-    color: #FFFFFF;
-    position: absolute;
-    top: 270px;
-    right: 250px;
-    width: 100px;
-    height: 40px;
-  }
-
-  footer p {
-    color: #FFFFFF;
-    background-color:#06114F;
-    font-family: Merriweather;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
+.blue-section{
+  background-color:#06114F;
 }
 
+.icon{
+  margin: 10px;
+  color: #F5F5F5;
+  font-size: 30px;
+}
+
+/* Landing page */
+
+.landing-page{
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.landing-text{
+  color: #252F65;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.landing-text h1{
+  font-family: Merriweather;
+  font-weight: 900;
+}
+
+.landing-text p{
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.landing-page button{
+  color: #F5F5F5;
+  background-color: #6F3096;
+  font-family: Merriweather;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 20px 60px;
+}
+
+.saltbae{
+  height: 594px;
+  width: 594px;
+}
+
+/* Upload Page */
+.upload-page{
+  background-color: #6F3096;
+}
+
+
+.box{
+  background-color: #F5F5F5;
+  box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.5);
+  border-radius: 21px;
+  margin: 5%;
+}
+
+.upload-page h1{
+  color: #252F65;
+  margin: 10%;
+}
+
+.upload-page p{
+  color: #252F65;
+  margin: 10%;
+  margin-bottom: 20%;
+}
+
+.upload-page form{
+  margin: 10%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #06114F;
+  border-radius: 4px;
+}
+
+.form-description{
+  margin: 15px 0px;
+}
+
+.form-image{
+  margin: 15px 0px;
+}
+
+.uploader{
+  height: 200px;
+}
+
+.submitButton{
+  margin: 5% 0%;
+  text-align: center;
+}
+
+.submitButton button{
+  color: #FFFFFF;
+  background-color: #6F3096;
+  width: 100px;
+}
+
+/* Most viewed page */
+.container-fluid.most-viewed{
+  padding: 4% 1%;
+}
+
+.most-viewed h1{
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  color: #252F65;
+  margin: 20px;
+}
+
+.mw-image{
+  height: 364px;
+  width: 402px;
+}
+
+
+
 @media (max-width: 991px) {
-  .landing-page h1{
-    position: absolute;
-    width: 298px;
-    height: 115px;
-    left: 30%;
-    top: 153px;
+  .container-fluid{
+    padding: 3% 6%;
   }
 
-  .landing-page p{
-    position: absolute;
-    width: 298px;
-    height: 79px;
-    left: 30%;
-    top: 409px;
+  .landing-text h1{
+    font-family: Merriweather;
+    font-weight: 900;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
-  .landing-page button{
-    position: absolute;
-    left:27%;
-    top: 486px;
-
+  .landing-text p{
+    font-family: Roboto;
+    font-weight: 300;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .saltbae{
-    position: absolute;
-    width: 294px;
-    height: 294px;
-    left: 30%;
-    top: 551px;
+    height: 394px;
+    width: 394px;
   }
 
-  .container-fluid.middle{
-    position: absolute;
-    width: 100%;
-    height: 673px;
-    left: -17px;
-    top: 958px;
-    background-color: #6F3096;
-    position: absolute;
+  .box{
+    margin: 5% 20%;
   }
 
-  .box {
-    position: absolute;
-    width: 297px;
-    height: 535px;
-    left: 30%;
-    top: 97px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.5);
-    border-radius: 21px;
-  }
-
-  .box h1{
-    padding-top: 10px;
-    padding-bottom: 10px; 
-    color: #252F65;
-  }
-
-  .box p{
-    padding-bottom: 0px;
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #252F65;
-    padding-left: 30px;
-    padding-right: 30px;
-
-  }
-  
-  .box form{
-    padding-top: 0px;
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 20px;
-  }
-  
-  .box #InputDescriere{
-    margin-bottom: 30px;
-  }
-
-  .box button {
-    background-color: #6F3096;
-    color: #FFFFFF;
-    position: absolute;
-    top: 420px;
-    right: 90px;
-    width: 150px;
-  }
-
-  .viewed h1{
-    position: absolute;
-    width: 231px;
-    height: 45px;
-    left: 35%;
-    top: 1700px;
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
+  .upload-page h1{
     text-align: center;
-    color: #252F65;
+    margin: 10px 40px;
   }
 
-  .img1{
-    position: absolute;
-    width: 283px;
-    height: 250px;
-    left: 33%;
-    top: 1785px;
-    border-radius: 55px;
+  .upload-page p{
+    text-align: center;
+    margin: 10px 100px;
   }
 
-  .img2{
-    position: absolute;
+  .upload-page form{
+    margin: 5% 10%;
+  }
+
+  .container-fluid.most-viewed{
+    padding: 4% 1%;
+    text-align: center;
+  }
+
+  .most-viewed h1{
+    text-align: center;
+    margin: 20px;
+  }
+
+  .mw-image{
     width: 302px;
-    height: 243px;
-    left: 33%;
-    top: 2072px;
-    border-radius: 55px;
-  }
-
-  .img3{
-    position: absolute;
-    width: 284px;
-    height: 247px;
-    left: 33%;
-    top: 2356px;
-    border-radius: 55px;
-  }
-
-  .container-fluid.bottom{
-    padding:  0px;
-    background-color:#06114F;
-    position: absolute;
-    width: 100%;
-    height: 168px;
-    left: -1px;
-    top: 2643px;;
-    bottom: 0;
-  }
-
-  footer {
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    height: 150px;
-  }
-
-  footer p {
-    color: #FFFFFF;
-    background-color:#06114F;
-    font-family: Merriweather;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-    footer p {
-    color: #FFFFFF;
-    background-color:#06114F;
-    font-family: Merriweather;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
+    height: 263px;
+    margin: 15px;
   }
 }
