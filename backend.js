@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
+var sha256 = require('js-sha256');
 
 const app = express();
 
@@ -8,23 +9,26 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost:27017/ProbaItDB");
+// mongoose.connect(process.env.SERVER);
+
 
 const Schema = mongoose.Schema;
 
+const userSchema = new Schema({
+  email: String,
+  username: String,
+  password: String,
+});
+
+const User = new mongoose.model("User", userSchema);
+
 const memeSchema = new mongoose.Schema({
-  description: String
+  description: String,
+  user: userSchema
 });
 
 const Meme = mongoose.model('Meme', memeSchema);
 
-// const userSchema = new Schema({
-//   email: String,
-//   username: String,
-//   password: String,
-//   memes: [memeSchema]
-// });
-
-// const User = new mongoose.model("User", userSchema);
 
 // Target all memes
 
@@ -47,7 +51,6 @@ app.route("/memes")
 
   newMeme.save(function(err){
     if(!err){
-      console.log(newMeme);
       res.send("Succesfully added a new meme.");
     } else {
       res.send(err);
@@ -95,6 +98,40 @@ app.route("/memes/:memeId")
     } else {
       res.send(err);
     }
+  });
+});
+
+// Register
+app.post("/register", function(req,res){
+  const hashedPassword = sha256(req.body.password);
+  const newUser = new User({
+    email: req.body.email,
+    username: req.body.username,
+    password: hashedPassword
+  });
+  newUser.save(function(err){
+    if(!err){
+      res.send("Succesfully added a new user.");
+    } else {
+      res.send(err);
+    }
+  });
+});
+
+// Login
+app.post("/login", function(req,res){
+  const reqPassword = sha256(req.body.password);
+  const reqUsername = req.body.username;
+  User.find({username: reqUsername}, function(err, user) 
+  {
+     if (err){
+         res.sendStatus(404); // user not found
+     }
+     else if(user.password == reqPassword){
+        res.send ("Authenticated with succes");
+      } else {
+        res.sendStatus(401); // password is incorect
+      }
   });
 });
 
