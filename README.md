@@ -3,11 +3,11 @@
 # Frontend
 Pentru a se accesa pagina de frontend, in my-app se ruleaza npm start.
 Am implementat:
-1. Navbar
-2. Landing page
-4. Formular de upload imagini
-5. Footer
-6. Responsivitatea design-ului
+1.Navbar
+2.Landing page
+4.Formular de upload imagini
+5.Footer
+6.Responsivitatea design-ului
 
 Pentru implementarea acestori task-uri am scris scheletul de html folosind react
 adaugand bootstrap si css (din styles.css). Am incadrat elementele paginii in:
@@ -37,13 +37,13 @@ delete http://localhost:3000/memes/63971fbac5b611412f2f2a3c
 post http://localhost:3000/register
 post http://localhost:3000/login
 Am implementat:
-1. DB schema for users
-2. CRUD
-3. Register & Login (implementat partial)
+1.DB schema for users
+2.CRUD
+3.Register & Login (implementat partial)
 
 Pentru a implementa backendul am folosit node.js. Pentru baza de date am folosit mongodb.
 Schemele pentru users si memes le-am facut cu mongoose.Schema cu parametrii din cerinta.
 Crud-ul l-am facut cu mongoose. Am preluat parametrii din req.body cu care am facut operatiile necesare.
 Register a fost implementat la fel ca post meme, parola fiind has-uita inainte de a o introduce in baza
 de date. Login-ul nu l-am implemmentat complet, acesta doar verifica daca un username exista, daca da
-daca are parola stocata, fara a trimite un tokn de autentificare.
+daca are parola stocata, fara a trimite un token de autentificare.
