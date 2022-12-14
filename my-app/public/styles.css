@@ -9,6 +9,7 @@
   .container-fluid{
     padding: 3% 15%;
   }
+
    /* Navbar  */
   .navbar {
     background: #F5F5F5;
@@ -19,8 +20,7 @@
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 300;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 0 20px;
     font-size: 1.5rem;
     font-weight: 300;
   }
@@ -93,12 +93,12 @@
 
 .upload-page h1{
   color: #252F65;
-  margin: 10%;
+  margin: 15% 12%;
 }
 
 .upload-page p{
   color: #252F65;
-  margin: 10%;
+  margin: 15% 10%;
   margin-bottom: 20%;
 }
 

@@ -7,7 +7,6 @@ function LandingPage() {
         <div className="landing-text col-lg-6 col-md-12 col-sm-12">
             <h1>Partajarea de meme-uri nu a fost niciodată mai simplă!</h1>
             <p>Platforma ideală pentru studenții de la Politehnică, amuzați de câte materii o să pice semestrul asta.</p>
-            {/* <button type="button" className="btn btn-lg"><a href="#upload">Upload a MEME</a></button>  */}
             <a href="#upload"><button type="button" className="btn btn-lg">Upload a MEME</button> </a>
         </div>
         <div className="landing col-lg-6 col-md-12 col-sm-12">
