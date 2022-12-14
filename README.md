@@ -1,6 +1,6 @@
 # Proba-it-lsac
 
-#Frontend
+# Frontend
 Pentru a se accesa pagina de frontend, in my-app se ruleaza npm start.
 Am implementat:
 1. Navbar
@@ -28,7 +28,7 @@ mic, am folosit media query pentru a schimba unele dimenisuni pentru un ecran de
 mobil.
 
 
-#Backend
+# Backend
 Pentru a se accesa API-ul de backend, in directorul parinte se ruleaza node backend.js.
 Apeluri catre API se dau prin postman cu format x-www-form-url-encoded, exemplu:
 get http://localhost:3000/memes
